@@ -2,7 +2,6 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 import { translateFields } from './fieldTranslation'
 
-import richText from './objects/richText'
 import openGraph from './objects/openGraph'
 import captionImage from './objects/captionImage'
 import blockContent from './objects/blockContent'
@@ -20,7 +19,6 @@ export default createSchema({
       // or document type that should not have
       // field-level validations (but Document translation)
       blockContent,
-      richText,
       openGraph,
       captionImage,
       post
