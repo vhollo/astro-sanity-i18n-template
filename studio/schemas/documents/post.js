@@ -26,18 +26,6 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'location',
-      title: 'Location',
-      type: 'reference',
-      to: { type: 'location' },
-    },
-    {
-      name: 'locations',
-      title: 'Locations',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'location'}}],
-    },
-    {
       name: 'category',
       title: 'Category',
       type: 'reference',
